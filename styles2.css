@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #f9f9f9;
+}
+
+/* Header Bar */
+.header-bar {
+    background: #a00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    position: relative;
+}
+.header-logo, .header-open {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+.header-note {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Main Banner */
+.main-banner {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+.banner-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    filter: blur(0.5px) brightness(0.7);
+}
+.banner-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-overlay h1 {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Categories */
+.categories-section {
+    background: #fff;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.categories-title {
+    color: #2980b9;
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.categories-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.categories-nav li {
+    display: inline-block;
+}
+.categories-nav a {
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 1.1em;
+    padding: 0 15px;
+}
+.categories-nav a:hover {
+    color: #2980b9;
+}
+
+/* Vacancies Section */
+.vacancies-section {
+    background: #aeb9b6;
+    padding: 40px 0 60px 0;
+}
+.latest-title {
+    margin-left: 120px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: left;
+}
+
+/* Carousel Styling */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-wrapper {
+    width: 900px; /* Width to fit 2 cards plus some spacing */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: #444;
+}
+
+.vacancy-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    width: 400px;
+    min-height: 140px;
+    margin: 0 15px;
+    flex-shrink: 0;
+}
+
+.vacancy-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 18px;
+}
+
+.vacancy-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.vacancy-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.vacancy-company a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.vacancy-location {
+    color: #888;
+    font-size: 0.97em;
+    margin-bottom: 8px;
+}
+
+.vacancy-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.vacancy-type {
+    color: #444;
+    font-size: 0.98em;
+}
+
+.type-full {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.job-vacancies-btn {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 5px 18px;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.vacancy-time {
+    color: #444;
+    font-size: 0.93em;
+    margin-top: 2px;
+}

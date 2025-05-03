@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #f9f9f9;
+}
+
+.categories-section {
+    background: #fff;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.categories-title {
+    color: #2980b9;
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.categories-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.categories-nav a {
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.categories-nav a:hover {
+    color: #2980b9;
+}
+
+.vacancies-section {
+    background: #aeb9b6;
+    padding: 40px 0 60px 0;
+}
+
+.latest-title {
+    margin-left: 100px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.vacancies-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.carousel-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: stretch;
+    margin: 0 10px;
+}
+
+.vacancy-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.vacancy-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 18px;
+}
+
+.vacancy-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.vacancy-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.vacancy-company a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.vacancy-location {
+    color: #888;
+    font-size: 0.97em;
+    margin-bottom: 8px;
+}
+
+.vacancy-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.vacancy-type {
+    color: #444;
+    font-size: 0.98em;
+}
+
+.type-full {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.job-vacancies-btn {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 5px 18px;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.vacancy-time {
+    color: #444;
+    font-size: 0.93em;
+    margin-top: 2px;
+}

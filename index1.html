@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MmoneyMatters Online Mall</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <div class="header-bar">
+        <img src="Snipaste_2025-04-30_00-33-57.png" class="header-logo" alt="Logo">
+        <span class="header-title" style="color: red;background-attachment: fixed;">WELCOME TO MMONEYMATTERS SPACE</span>
+        <span class="header-note" style="color: black;">SCROW DOWN TO ENTER I</span>
+        <img src="Snipaste_2025-04-30_00-21-41.png" class="header-open" alt="Open">
+    </div>
+
+    <!-- Main Banner -->
+     <!--
+    <div class="main-banner">
+        <div class="banner-overlay">
+            <h1>MmoneyMatters online<br>mall</h1>
+    -->
+    </div >
+    <section>
+      <!--  <img src="Snipaste_2025-04-30_00-39-19.png" alt="Banner" class="banner-img">-->
+      <h1>MmoneyMatters online<br>mall</h1>
+    </section>
+
+    <div class="topper">
+        <h1>.</h1>
+
+    </div>
+
+    </div>
+
+    <!-- Categories Navigation -->
+    <div class="categories-section">
+        <h2 class="categories-title">CATEGORIES</h2>
+        <nav class="categories-nav">
+            <a href="#">Loans</a>
+            <a href="#">fashion(clothes,shoes,jewerly)</a>
+            <a href="show-ticket-booking.html">show tickett booking</a>
+            <a href="bus-booking2.html">Classified Ads</a>
+            <a href="#">Stationary</a>
+        </nav>
+    </div>
+
+    <!-- Latest Vacancies -->
+    <div class="vacancies-section">
+        <h2 class="latest-title">Trending Stores</h2>
+        <div class="vacancies-carousel">
+            <button class="carousel-btn">&#x25C0;</button>
+            <div class="vacancy-card">
+                <div class="vacancy-logo">
+                    <img src="Snipaste_2025-05-02_23-05-22.png" alt="logo">
+                </div>
+                <div class="vacancy-details">
+                    <div class="vacancy-title">fast loans</div>
+                    <div class="vacancy-company">
+                        <a href="#"> MmoneyMatters Loans hub</a>
+                    </div>
+                    <div class="vacancy-location">
+                        <span>&#128205;</span> Poly,Blantyre, Malawi
+                    </div>
+                    <div class="vacancy-meta">
+                        <span class="vacancy-type">Type: <span class="type-full">WhatsApp group</span></span>
+                        <button class="job-vacancies-btn">VISIT STORE</button>
+                    </div>
+                    <div class="vacancy-time">fast,reliable loans</div>
+                </div>
+            </div>
+            <button class="carousel-btn">&#x25C0;</button>
+            <div class="vacancy-card">
+                <div class="vacancy-logo">
+                    <img src="Snipaste_2025-05-02_22-55-22.png" alt="logo">
+                </div>
+                <div class="vacancy-details">
+                    <div class="vacancy-title">fashion(clothing and jewerly)</div>
+                    <div class="vacancy-company">
+                        <a href="#">OG authentic wear</a>
+                    </div>
+                    <div class="vacancy-location">
+                        <span>&#128205;</span> Poly, Blantyre,Malawi
+                    </div>
+                    <div class="vacancy-meta">
+                        <span class="vacancy-type">Type: <span class="type-full">WhatsApp group</span></span>
+                        <button class="job-vacancies-btn">VISIT STORE</button>
+                    </div>
+                    <div class="vacancy-time">Clothes,jewerly,shoes etc</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+           <p>© 2025 MmoneyMatters. All Rights Reserved.</p>
+           <p>call or WhatsApp 0986327102</p>
+    </div>
+
+
+
+    <script>
+        // Place this at the end of your HTML or in a separate JS file
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const cards = document.querySelectorAll('.vacancy-card');
+    const cardWidth = cards[0].offsetWidth + 30; // Card width + margin
+    const cardCount = cards.length;
+    const visibleCards = 2;
+    let position = 0;
+
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${position * cardWidth}px)`;
+        prevBtn.disabled = position === 0;
+        nextBtn.disabled = position >= cardCount - visibleCards;
+    }
+
+    prevBtn.addEventListener('click', function() {
+        if (position > 0) {
+            position--;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', function() {
+        if (position < cardCount - visibleCards) {
+            position++;
+            updateCarousel();
+        }
+    });
+
+    // Optional: Auto-rotate every 5 seconds
+    // let autoRotate = setInterval(() => {
+    //     if (position < cardCount - visibleCards) {
+    //         position++;
+    //     } else {
+    //         position = 0;
+    //     }
+    //     updateCarousel();
+    // }, 5000);
+    // track.addEventListener('mouseenter', () => clearInterval(autoRotate));
+    // track.addEventListener('mouseleave', () => autoRotate = setInterval(() => {
+    //     if (position < cardCount - visibleCards) {
+    //         position++;
+    //     } else {
+    //         position = 0;
+    //     }
+    //     updateCarousel();
+    // }, 5000));
+
+    updateCarousel();
+});
+
+    </script>
+</body>
+</html>
